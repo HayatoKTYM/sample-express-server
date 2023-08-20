@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 // ルートエンドポイント
 app.get('/', (req, res) => {
   // res.sendFile(path.join(__dirname + '/index.html'));
-  res.render('index');
+  res.render('layout', {title: 'HOME', content: 'index'});
 });
 
 // /health エンドポイント
@@ -19,7 +19,7 @@ app.get('/health', (req, res) => {
 
 app.get('/greet', (req, res) => {
   const query = req.query.q || 'Express';
-  res.render('greet', { query: query });
+  res.render('layout', { title: 'Greet', content: 'greet', query: query });
 })
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);

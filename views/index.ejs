@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My Express Server</title>
-</head>
-<body>
-  <h1>Hello Node.JS</h1>
-  <form id="greetForm" action="/greet" method="get">
-    <input type="text" id="nameInput" name="q" placeholder="Enter your name">
-    <button id="submitButton" type="submit">Greet Me!</button>
-  </form>
-</body>
-</html>
+<h1 class="text-4xl mb-4">Hello Node.JS</h1>
+<form id="greetForm" action="/greet" method="get" class="space-y-4">
+  <input type="text" id="nameInput" name="q" placeholder="Enter your name" class="p-2 w-full rounded border">
+  <button id="submitButton" type="submit" class="bg-blue-500 text-white p-2 rounded disabled:opacity-50">Greet Me!</button>
+</form>
