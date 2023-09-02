@@ -12,9 +12,12 @@ npm i
 
 ## 実行方法
 
+```sh
+tsc
 ```
-node app.js
+
+```sh
+node dist/app.js
 ```
 
 localhost:4444/ にアクセスすると`index.html`の内容が表示される
-
